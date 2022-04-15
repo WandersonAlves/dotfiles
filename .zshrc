@@ -4,7 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="spaceship"
-plugins=(git zsh-interactive-cd zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-interactive-cd zsh-autosuggestions zsh-syntax-highlighting docker docker-compose)
 source $ZSH/oh-my-zsh.sh
 
 # Literally alias
