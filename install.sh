@@ -1,5 +1,9 @@
 #!/bin/sh
 
+echo "0. Install zsh and oh-my-zsh"
+sudo apt install zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "1. Installing common applications"
 echo "1.1 fnm"
 curl -fsSL https://fnm.vercel.app/install | bash
