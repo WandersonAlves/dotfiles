@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if ($SHELL = "/usr/bin/zsh"); then
+if [ $SHELL = "/usr/bin/zsh" ]; then
     echo "⚡️ zsh installed, installing oh-my-zsh"
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     cp ../.zshrc ~/.zshrc
