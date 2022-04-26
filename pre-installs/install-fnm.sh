@@ -13,8 +13,5 @@ if [ $(which fnm) != "$HOME/.fnm/fnm" ]; then
 else
     echo "⚡️ Installing node global packages"
     npm config set ignore-scripts false
-    npm i -g spaceship-prompt
-    npm i -g npm
-    npm i -g yarn
-    npm i -g yeelight-manager
+    npm i -g npm yarn yeelight-manager
 fi
