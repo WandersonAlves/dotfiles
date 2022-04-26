@@ -3,6 +3,7 @@
 if [ $SHELL = "/usr/bin/zsh" ]; then
     echo "⚡️ zsh installed, installing oh-my-zsh"
     echo "⚠️ NOTE: oh-my-zsh will appear after been installed. Run `exit` to continue the script"
+    sleep 2
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
