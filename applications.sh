@@ -1,12 +1,5 @@
 #!/bin/sh
 
-echo "⚡️ apt installs"
-sudo apt install git curl neofetch terminator wget gpg apt-transport-https
-echo "⚡️ 0. Install oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-echo "⚡️ 1. Installing common applications"
-echo "⚡️ 1.1 fnm"
-curl -fsSL https://fnm.vercel.app/install | bash
 echo "⚡️ 1.2 vscode"
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
@@ -14,11 +7,11 @@ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/p
 rm -f packages.microsoft.gpg
 sudo apt update
 sudo apt install code
-echo "⚡️ 1.3 Spotify"
-curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt update
-sudo apt install spotify-client
+# echo "⚡️ 1.3 Spotify"
+# curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
+# echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+# sudo apt update
+# sudo apt install spotify-client
 echo "⚡️ 1.4 Google Chrome Stable"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb
 sudo dpkg -i chrome.deb
@@ -48,15 +41,3 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 echo "⚡️ 1.12 docker-compose"
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-echo "⚡️ x. Post install"
-echo "⚡️ x.1 Configuring fnm"
-fnm install 14
-fnm install 16
-fnm default 16
-
-echo "⚡️ x.2 Installing node global packages"
-npm config set ignore-scripts false
-npm i -g spaceship-prompt
-npm i -g npm
-npm i -g yarn
-npm i -g yeelight-manager
