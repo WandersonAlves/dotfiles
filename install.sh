@@ -2,8 +2,7 @@
 
 echo "⚡️ apt installs"
 sudo apt install git curl neofetch terminator wget gpg apt-transport-https
-echo "⚡️ 0. Install zsh and oh-my-zsh"
-sudo apt install zsh
+echo "⚡️ 0. Install oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "⚡️ 1. Installing common applications"
 echo "⚡️ 1.1 fnm"
