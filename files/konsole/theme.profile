@@ -7,8 +7,7 @@ CursorShape=1
 
 [General]
 DimWhenInactive=false
-Directory=/home/popoto/dev
-Name=Profile 3
+Name=theme
 Parent=FALLBACK/
 TerminalCenter=true
 
