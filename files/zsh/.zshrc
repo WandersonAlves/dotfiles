@@ -15,6 +15,6 @@ alias bulb-low="yee set 'Kitchen,Living Room' ct 2500 50" # Change bulbs to low 
 alias bulb-normal="yee set 'Kitchen,Living Room' ct 4500 100" # Change bulbs to normal light
 # fnm - Fast Node Manager
 export PATH=$HOME/.fnm:$PATH
-eval "$(fnm env)"
+eval "`fnm env`"
 
 
