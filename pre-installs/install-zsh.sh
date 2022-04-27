@@ -13,7 +13,7 @@ else
     echo "⚡️ installing zsh"
     sudo apt install zsh -y
     chsh -s $(which zsh)
-    cp ../files/zsh/.zshrc ~/.zshrc
+    cp ./files/zsh/.zshrc ~/.zshrc
     echo "Please logout and run this script again"
 
 fi
