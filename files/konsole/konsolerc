@@ -9,3 +9,4 @@ ShowWindowTitleOnTitleBar=true
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled
+ToolBar=Disbled
