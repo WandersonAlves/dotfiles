@@ -1,6 +1,8 @@
 #!/bin/sh
-fnm = $(which fnm)
-if [ $fnm = "$HOME/.fnm/fnm" ]; then
+
+WHICH_FNM=$(which fnm)
+
+if [ "${WHICH_FNM}" = "$HOME/.fnm/fnm" ]; then
     echo "⚡️ Installing node global packages"
     npm config set ignore-scripts false
     npm i -g npm yarn yeelight-manager
