@@ -1,6 +1,10 @@
 #!/bin/sh
-
-if [ $(which fnm) != "$HOME/.fnm/fnm" ]; then
+fnm = $(which fnm)
+if [ $fnm = "$HOME/.fnm/fnm" ]; then
+    echo "⚡️ Installing node global packages"
+    npm config set ignore-scripts false
+    npm i -g npm yarn yeelight-manager
+else
     echo "⚡️ Installing fnm"
     curl -fsSL https://fnm.vercel.app/install | bash
     source ~/.zshrc
@@ -10,8 +14,4 @@ if [ $(which fnm) != "$HOME/.fnm/fnm" ]; then
     fnm install 16
     fnm default 16
     echo "Please refresh this terminal session or open another and run this script again"
-else
-    echo "⚡️ Installing node global packages"
-    npm config set ignore-scripts false
-    npm i -g npm yarn yeelight-manager
 fi
