@@ -1,0 +1,11 @@
+[Desktop Entry]
+DefaultProfile=theme.profile
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+ShowMenuBarByDefault=false
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
