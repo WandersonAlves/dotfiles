@@ -1,5 +1,9 @@
 #!/bin/sh
-
+# echo "⚡️ 1.1 ULauncher"
+# sudo add-apt-repository ppa:agornostal/ulauncher && sudo apt update && sudo apt install ulauncher
+# git clone https://github.com/KiranWells/ulauncher-nord/ \
+#   ~/.config/ulauncher/user-themes/nord
+# cp -r ./files/ulauncher/. $HOME/.config/ulauncher
 echo "⚡️ 1.2 vscode"
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
