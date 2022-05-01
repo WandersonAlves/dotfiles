@@ -13,8 +13,3 @@ alias cat="batcat -pp" # Overrides cat command
 alias change-wallpaper="python /mnt/ssd-300/Wallpapers/wallpaper_changer.py"
 alias bulb-low="yee set 'Kitchen,Living Room' ct 2500 50" # Change bulbs to low light
 alias bulb-normal="yee set 'Kitchen,Living Room' ct 4500 100" # Change bulbs to normal light
-# fnm - Fast Node Manager
-export PATH=$HOME/.fnm:$PATH
-eval "`fnm env`"
-
-
