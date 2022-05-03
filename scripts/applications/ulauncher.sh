@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo add-apt-repository ppa:agornostal/ulauncher && sudo apt update && sudo apt install ulauncher -y
+sudo add-apt-repository ppa:agornostal/ulauncher && sudo apt update && sudo apt install ulauncher wmctrl -y
 git clone https://github.com/KiranWells/ulauncher-nord/ \
     ~/.config/ulauncher/user-themes/nord
 cp -r ./files/ulauncher/. $HOME/.config/ulauncher
