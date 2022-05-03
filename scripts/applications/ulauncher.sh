@@ -7,3 +7,4 @@ cp -r ./files/ulauncher/. $HOME/.config/ulauncher
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source '[]'
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward '[]'
 python3 ./set-keyboard-shortcut.py 'ULauncher' 'ulauncher-toggle' '<Super>space'
+pip3 install fuzzywuzzy --user
