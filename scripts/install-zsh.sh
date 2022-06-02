@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 if [ $SHELL = "/usr/bin/zsh" ]; then
     echo "⚡️ zsh installed, installing oh-my-zsh"

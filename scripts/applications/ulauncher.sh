@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 sudo add-apt-repository ppa:agornostal/ulauncher && sudo apt update && sudo apt install ulauncher -y
 git clone https://github.com/KiranWells/ulauncher-nord/ \

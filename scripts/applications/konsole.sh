@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 sudo apt install konsole -y
 mkdir $HOME/.local/share/konsole

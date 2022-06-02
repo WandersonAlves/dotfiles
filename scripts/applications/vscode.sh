@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 echo "⚡️ 1.2 vscode"
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor >packages.microsoft.gpg

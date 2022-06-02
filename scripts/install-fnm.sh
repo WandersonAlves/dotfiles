@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 WHICH_FNM=$(which fnm)
 
