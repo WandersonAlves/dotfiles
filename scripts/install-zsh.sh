@@ -11,6 +11,7 @@ if [ $SHELL = "/usr/bin/zsh" ]; then
     git clone https://github.com/spaceship-prompt/spaceship-prompt.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt --depth=1
     ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/spaceship.zsh-theme
     cp ./files/zsh/.zshrc ~/.zshrc
+    echo "zsh installed, refresh your session"
 else
     echo "⚡️ installing zsh"
     sudo apt install zsh -y
