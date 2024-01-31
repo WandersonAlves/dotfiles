@@ -5,9 +5,9 @@ WHICH_FNM=$(which fnm)
 
 if [ "${WHICH_FNM}" = "*fnm/* ]; then
     echo "⚡️ Configuring node"
-    fnm install 14
     fnm install 16
-    fnm default 16
+    fnm install 20
+    fnm default 20
     echo "⚡️ Installing node global packages"
     npm i -g npm yarn yeelight-manager
 else
