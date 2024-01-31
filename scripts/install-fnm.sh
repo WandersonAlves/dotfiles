@@ -3,7 +3,7 @@ set -e
 
 WHICH_FNM=$(which fnm)
 
-if [ "${WHICH_FNM}" = "$HOME/.fnm/fnm" ]; then
+if [ "${WHICH_FNM}" = "*fnm/* ]; then
     echo "⚡️ Configuring node"
     fnm install 14
     fnm install 16
